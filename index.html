@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Gutenberg Distributed Proofreading ocrdiff2 small dataset</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Project Gutenberg Distributed Proofreading ocrdiff2 small dataset">
+  <meta name="author" content="La Monte Henry Piggy Yarroll">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Project Gutenberg Distributed Proofreading ocrdiff2 small dataset</h1>
+    <h2></h2>
+    <p>La Monte Henry Piggy Yarroll<br/>analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2><a href="https://www.gutenberg.org/">Project Gutenberg</a></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Project Gutenberg offers over 46,000 free ebooks. All our ebooks were previously published by <em>bona fide</em> publishers.</p>
+
+<h2><a href="http://www.pgdp.net">Project Gutenberg Distributed Proofreading</a></h2>
+
+<p>We digitize and diligently proofread ebooks with the help of thousands of volunteers.</p>
+
+<h2><a href="http://www.pgdp.net/wiki/Confidence_in_Page_analysis">Confidence in Page Project</a></h2>
+
+<p>This is an effort to develop an algorithm to help decide when we are done proofreading. A central feature of such an algorithm is a way to estimate the number of defects likely to be found in the next round of proofreading.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2><a href="http://baqaqi.chi.il.us/pgdp/ocrdiff2.py">ocrdiff2</a></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Based on OCRdiff by Carlo Traverso. It compares rounds of proofreading, classifying every change.</p>
+
+<h2><a href="http://www.pgdp.net/wiki/Confidence_in_Page_Algorithm#Small_Data_Set">The Small Dataset</a></h2>
+
+<p>The Small Data Set is a set of 284 projects extracted in mid-January 2008. It is all projects between 4700078558b6a and 47898d0245839 inclusive. Proofer data have been anonymized, but this is still considered sensitive information and I have not been able to get permission to publish the raw dataset. Interested parties should contact the author who can request permission for specific distribution from the PGDP administration.</p>
+
+<h2>What you do.</h2>
+
+<p>The application lets you pick specific change types to include in the metric to compare change rates from one round of proofreading to the next.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Sample Graph</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This graph compares the first two rounds of proofreading with the metric composed of all change types except <strong>EQUAL</strong>, <strong>NEWLINE_SPLIT</strong>, <strong>TOTAL_MISMATCH</strong>, and <strong>XXLARGE_DIFF</strong>.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Slide 5</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='<a href="https://www.gutenberg.org/">Project Gutenberg</a>'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='<a href="http://baqaqi.chi.il.us/pgdp/ocrdiff2.py">ocrdiff2</a>'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sample Graph'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Slide 5'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
