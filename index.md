@@ -46,3 +46,4 @@ This graph compares the first two rounds of proofreading with the metric compose
 
 * On the previous page notice that most books are up and to the right of (0.1, 0.1). This means more than 10% of words were altered in both P1 and P2. These projects undoubtedly still have many errors in them.
 * If you examine **EQUAL**, you see a problem with ocrdiff2. We would expect **EQUAL** to be the largest metric by far, but we see it is less than 10% for most rounds of most projects. The problem is that a whole block of words which match are reported as a single count. Really it should be scaled by the number of words which match.
+* Note that the transition from P3 to F1 involves adding of a lot of formatting, so we would not expect as strong a relationship between P3 and F1 as between any other pair of rounds.
