@@ -33,7 +33,7 @@
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
     <h1>Project Gutenberg Distributed Proofreading ocrdiff2 small dataset</h1>
-    <h2></h2>
+    <h2>metric builder</h2>
     <p>La Monte Henry Piggy Yarroll<br/>analyst</p>
   </hgroup>
   <article></article>  
@@ -71,7 +71,7 @@
 
 <p>The Small Data Set is a set of 284 projects extracted in mid-January 2008. It is all projects between 4700078558b6a and 47898d0245839 inclusive. Proofer data have been anonymized, but this is still considered sensitive information and I have not been able to get permission to publish the raw dataset. Interested parties should contact the author who can request permission for specific distribution from the PGDP administration.</p>
 
-<h2>What you do.</h2>
+<h2>Using <a href="http://piggy.shinyapps.io/devdataprod-project/">the metric builder</a></h2>
 
 <p>The application lets you pick specific change types to include in the metric to compare change rates from one round of proofreading to the next.</p>
 
@@ -94,10 +94,14 @@
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Slide 5</h2>
+    <h2>Interpretation</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ul>
+<li>On the previous page notice that most books are up and to the right of (0.1, 0.1). This means more than 10% of words were altered in both P1 and P2. These projects undoubtedly still have many errors in them.</li>
+<li>If you examine <strong>EQUAL</strong>, you see a problem with ocrdiff2. We would expect <strong>EQUAL</strong> to be the largest metric by far, but we see it is less than 10% for most rounds of most projects. The problem is that a whole block of words which match are reported as a single count. Really it should be scaled by the number of words which match.</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -126,7 +130,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Slide 5'>
+        data-slide=4 title='Interpretation'>
          4
       </a>
     </li>
